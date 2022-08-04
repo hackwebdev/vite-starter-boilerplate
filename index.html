@@ -4,30 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/f331e09529.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="nav">
-      <a href="#">Logo</a>
-      <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
-      <label for="nav__checkbox" class="nav__toggle">
-        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-          <path
-            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-          />
-        </svg>
-        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-          />
-        </svg>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="Logo" />
+      <input id="toggler" class="toggler" type="checkbox" />
+      <label for="toggler" class="burger">
+        <span><i class="hamburger fas fa-bars"></i> </span>
       </label>
-      <ul class="nav__menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="background"></div>
+      <h1>Responsive Flexbox Navbar</h1>
+      <p>Build a Responsive Mobile First Flexbox Navigation</p>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

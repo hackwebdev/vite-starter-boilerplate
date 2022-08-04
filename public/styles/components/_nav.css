@@ -1,0 +1,64 @@
+/* Nav Style Start */
+
+.toggler {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin-left: 16px;
+}
+
+nav {
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    background: #585858;
+    left: -100%;
+    transition: all 0.5s;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: rgb(91, 180, 253);
+    transition: ease-in 0.1s;
+  }
+}
+
+.toggler:checked ~ nav ul {
+  left: 0;
+}
+
+.burger {
+  position: absolute;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(31, 31, 31);
+  top: 0;
+  right: 0;
+  margin-right: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.toggler:checked ~ nav a {
+  opacity: 1;
+}
